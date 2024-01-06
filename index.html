@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.js"></script>
+    <title>Rescue - Home</title>
+</head>
+<body>
+
+    <nav class="navigation">
+        <button class="discover" onclick="show()"><h1>DISCOVER</h1></button>
+
+        <div>
+            <ul class="drop_down">
+                <li><a href="climate.html">CLIMATE</a></li>
+                <li><a href="forests.html">FORESTS</a></li>
+                <li><a href="wildlife.html">WILDLIFE</a></li>
+                <li><a href="oceans.html">OCEANS</a></li>
+                <li><a href="solutions.html">SOLUTIONS</a></li>
+                <li><a href="share.html">SHARE YOUR STORIES</a></li>
+                <li><a href="#footer">FOLLOW US</a></li>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <a href="index.html" ><img src="logo.png" id="logo" alt="rescue_logo"/></a>
+
+    <video id="main_video" width="100%" autoplay muted loop>
+        <source src="main video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <header>
+        <h1>NATURE IS <br><span id="changing_word"></span>.</h1>
+        <p>Sustaining the world for the benefit of people & nature</p>
+    </header>
+
+    <section>
+        <div class="heading1">
+            <h1><span id="red_word">One million</span> of the world's estimated 8 million species are threatened with extinction.</h1>
+        </div>
+
+        <div class="image_gallery">
+            <img src="elephant.jpg" alt="Elephant">
+            <img src="mahogany.jpg" alt="Mahogany tree">
+            <img src="cheetah.jpg" alt="Cheetah">
+            <img src="panda.jpg" alt="Panda">
+            <img src="venus-fly-trap.jpg" alt="Venus fly trap">
+            <img src="rhino.jpg" alt="Rhino">
+            <img src="whale.jpg" alt="Whale">
+            <img src="butterfly.jpg" alt="Monarch butterfly">
+        </div>
+    </section>  
+
+    <section>
+        <div class="heading2">
+            <h1>The world <br>has <br><span id="red_word">changed</span>,</h1>
+        </div>
+        <div class="para1">
+            <p>Wildlife has halved in less than a generation. Natural habitats are being put under increasing pressure. And climate change is leading us into uncharted territory.<br><br>
+               They're more aware of the threat to essentials like food, water and clean air. They're more ambitious, more innovative. And they're backed by a growing number of corporations.
+            </p>
+        </div>
+    </section>
+    
+    <section>
+        <div class="heading3">
+            <h1>So have <br><span id="red_word">we</span>.</h1>
+        </div>
+        <div class="video">
+            <video src="video2.mp4" muted autoplay loop></video>
+        </div>
+    </section>
+    
+    <section id="footer">
+        <div class="heading4">
+            <h1>LET'S<br><span id="changing_word2"></span></h1>
+        </div>
+        <div class="part1">
+            <h2>DISCOVER</h2>
+            <ul>
+                <li><a href="#">CLIMATE</a></li>
+                <li><a href="#">FORESTS</a></li>
+                <li><a href="#">WILDLIFE</a></li>
+                <li><a href="#">OCEANS</a></li>
+                <li><a href="#">SOLUTIONS</a></li>
+                <li><a href="#">SHARE YOUR STORIES</a></li>
+            </ul>
+        </div>
+        <div class="part2">
+            <h2>FOLLOW US</h2>
+            <ul>
+                <li><a href="#"><img src="insta.png" alt="instagram" width="30px"></a></li>
+                <li><a href="#"><img src="youtube.png" alt="youtube" width="30px"></a></li>
+                <li><a href="#"><img src="linkedin.png" alt="linkedin" width="30px"></a></li>
+                <li><a href="#"><img src="facebook.png" alt="facebook" width="30px"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="script_file.js"></script>
+</body>
+</html>
