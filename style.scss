@@ -1,0 +1,983 @@
+*{
+    font-family: 'Antonio', sans-serif;
+}
+
+/*Standard resolution mobile. Portrait - viewport width of up to 480px
+Large mobile/tablet. Portrait - viewport width of between 481px to 1024px
+Tablet/laptop. Landscape - viewport width of 1025px and above
+7680px is the highest resolution width available as of now*/
+
+@mixin breakpoint($minwidth, $maxwidth){ /*similar to function in python, mixin lets the code written inside be reused*/
+    @media screen and (min-width: $minwidth) and (max-width:$maxwidth){
+        @content;
+    }
+}
+
+#flames, #smoke{
+    position: fixed;
+    opacity: 15%;
+    top: 0;
+    left: 0;
+}
+
+#main_video{
+    background-color: black;
+    @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
+        height: 530px;
+        border-radius: 20px;
+    }
+
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        height: auto;
+        border-radius: 20px; 
+    }
+
+    @include breakpoint(0px, 480px){
+        height: auto;
+        border-radius: 12px;
+    }
+}
+
+#logo{
+    position: fixed; 
+    background-color: black;
+    border-radius: 5px;
+    z-index: 1;
+    @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
+        left: 40px;
+        top: 10px;
+        padding-left: 5px;
+    }
+
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        top: 20px;
+        width: 20%;
+        left: 30px;
+        padding-left: 5px;
+    }
+
+    @include breakpoint(0px, 480px){
+        top: 10px;
+        width: 20%;
+        left: 20px;
+        padding-left: 3px;
+    }
+}
+
+header h1{ /*Nature is...*/
+    color: white;
+    position: absolute;
+    @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
+        top: 5%;
+        left: 56%;
+        font-size:3.1cm;
+        text-align: right;
+        line-height: 120%;
+        margin-bottom: 0;
+    }
+
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        left: 6%;
+        font-size:1.4cm;
+        text-align: right;
+        line-height: 120%;
+        margin-bottom: 0;
+        margin-left: 50%;
+        @include breakpoint(700px, 1024px){
+            font-size: 2.2cm;
+            top: 10%;
+            left: 6%;
+        }
+    }
+
+    @include breakpoint(0px, 480px){
+        top: 10%;
+        left: 6%;
+        text-align: right;
+        line-height: 120%;
+        margin-bottom: 0;
+        margin-left: 53%;
+        font-size: 1cm;
+        @include breakpoint(0px, 320px){
+            font-size:0.8cm;
+            margin-left: 53%;
+            top: 7%;
+        }
+        @include breakpoint(321px, 400px){
+            font-size:0.9cm;
+            margin-left: 50%;
+            top: 3%;
+        }
+    }
+}
+
+header p{
+    color: white;
+    position: absolute;
+    font-family: 'Lexend', sans-serif;
+    @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
+        top: 400px;
+        left: 56%;
+        text-align: right;
+        font-weight: lighter;
+        font-size: 4.5mm;
+    }
+
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        top: 210px;
+        left: 56%;
+        text-align: right;
+        font-weight: lighter;
+        font-size: 2mm;
+        @include breakpoint(700px, 1024px){
+            top: 370px;
+            left: 56%;
+            font-size: 3mm;
+        }
+    }
+
+    @include breakpoint(0px, 480px){
+        top: 190px;
+        left: 57%;
+        text-align: right;
+        font-weight: lighter;
+        font-size: 1.5mm;
+        @include breakpoint(0px, 320px){
+            top: 130px;
+            left: 56%;
+            font-size: 1.2mm;
+        }
+        @include breakpoint(321px, 400px){
+            top: 135px;
+            left: 56%;
+            font-size: 1.2mm;
+        }
+    }
+}
+
+#changing_word:before{
+    content: 'BEAUTY';
+    animation-name: changingWord;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes changingWord{
+    10% {content: 'BEAUTY';}
+    20% {content: 'BEAUTY';}
+    50% {content: 'CALLING';}
+    100% {content: 'DYING'; color: red;}
+} /*https://www.youtube.com/watch?v=mGmIGxuisPs*/
+
+.discover{
+    color: white;
+    position: fixed;
+    display: block;
+    text-decoration: underline;
+    transform: translateY(-50%); 
+    /*This enables to position the element along the y axis*/
+    border: 0;
+    background: 0 0;
+    @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
+        top: 30px;
+        left: 83%;
+        width: 40px;
+        height: 40px;
+        font-size: large;
+    }
+
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        top: 40px;
+        left: 83%;
+        font-size:2.5mm;
+        @include breakpoint(700px, 1024px){
+            font-size:3.7mm;
+            top: 45px;
+        }
+    }
+
+    @include breakpoint(0px, 480px){
+        top: 22px;
+        left: 82%;
+        font-size:1.6mm;
+    }
+}
+
+.discover h1{
+    background-color: black;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 7px;
+}
+
+.navigation{ 
+    position: fixed;
+    background-color: white;
+    border-radius: 20px;
+    transition: 1s;
+    z-index: 1;
+    left: -500px;
+    width: 300px;
+    height: 60%;
+}
+
+.navigation ul{
+    position: absolute;
+    @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
+        top: 2%;
+        right: 6%;
+        line-height: 55%;
+        width: 500px;
+    }
+
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        top: 1%;
+        right: 6%;
+        line-height: 40%;
+        width: 500px;
+    }
+
+    @include breakpoint(901px, 1024px){
+        line-height: 80%;
+    }
+    
+    @include breakpoint(0px, 480px){
+        line-height: 120%;
+        font-size: smaller;
+        width: 120px;
+        right: 8%;
+        @include breakpoint(0px, 320px){
+            line-height: 120%;
+            font-size: smaller;
+            width: 120px;
+            right: 8%;
+        }
+    }
+}
+
+.navigation ul li{
+    color: black;
+    list-style-type: none;
+    @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
+        padding: 20px 30px;
+        font-size: 1.4em;
+        text-align: right;
+    }
+
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        padding: 7px 7px;
+        font-size: x-small;
+        text-align: right;
+    }
+
+    @include breakpoint(901px, 1024px){
+        font-size: small;
+        text-align: right;
+    }
+    
+    @include breakpoint(0px, 480px){
+        font-size: xx-small;
+        text-align: right;
+        padding: 0 10px;
+    }
+}
+
+.navigation ul li:not(:last-child){
+    font-weight: bold;
+    @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
+        font-size: 2em;
+    }
+
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        font-size:smaller;
+    }
+
+    @include breakpoint(901px, 1024px){
+        font-size: larger;
+    }
+
+    @include breakpoint(0px, 480px){
+        font-size:small;
+    }
+}
+
+.navigation.active{ /*white box*/
+    position: fixed;
+    border: 1px solid black;
+    @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
+        top: 91px;
+        left: 56%;
+        width: 460px;
+        height: 420px;
+        @include breakpoint(1300px, 7680px){
+        left: 56%;
+        width: 540px;
+        }
+    }
+
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        top: 60px; /*for 481 - 599*/
+        left: 55%;
+        width: 200px; 
+        height: 180px;
+        @include breakpoint(600px, 700px){
+            top: 55px;
+            left: 65%;
+        }
+        @include breakpoint(701px, 900px){
+            top: 70px;
+            left: 70%;
+        }
+        @include breakpoint(901px, 1024px){
+            top: 70px;
+            left: 70%;
+            height: 240px;
+            width: 220px;
+        }
+    }
+
+    @include breakpoint(0px, 480px){
+        top: 41px; 
+        left: 62%;
+        width: 130px; 
+        height: 140px;
+        @include breakpoint(0px, 320px){
+            top: 32px; 
+            left: 55%;
+            width: 130px; 
+            height: 140px;
+        }
+        @include breakpoint(320px, 375px){
+            top: 32px; 
+            left: 56%;
+            width: 130px; 
+            height: 140px;
+        }
+    }
+}
+
+.drop_down a:hover{
+    text-decoration: underline;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, button{
+    cursor: pointer; 
+}
+
+.heading1{
+    text-transform: uppercase;
+    @include breakpoint(1025px, 7680px){
+        font-size: 0.9cm;
+        margin: 50px 0 50px 0;
+        width: 320px;
+        float: left;
+    }
+    @include breakpoint(481px, 1024px){
+        font-size: 0.8cm;
+        margin: 50px 0 50px 0;
+        width: 300px;
+        float: left;
+        @include breakpoint(481px, 761px){
+            font-size: 0.5cm;
+            width: 210px;
+        }
+    }
+    @include breakpoint(0px, 480px){
+        font-size: 0.4cm;
+        margin: 30px auto 0 auto;
+        width: 280px;
+        text-align: center;
+        
+    }
+}
+
+#red_word{
+    color: red;
+    animation-name: changeColor;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes changeColor{
+    0% {color: black;}
+    80% {color: rgb(150, 0, 0);}
+    100% {color: red;}
+}
+
+.image_gallery { /*https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp*/
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    position: relative;
+     /*top right bottom left*/
+    @include breakpoint(1025px, 7680px){
+        padding: 2px;
+        width: 59%;
+        margin: 50px 0 50px 0;
+        float: right;
+    }
+    @include breakpoint(481px, 1024px){
+        padding: 2px;
+        width: 49%;
+        margin: 50px 0 50px 0;
+        float: right;
+        @include breakpoint(481px, 761px){
+            padding: 2px;
+            width: 40%;
+            margin: 50px 0 50px 0;
+            float: right;
+        }
+    }
+    @include breakpoint(0px, 480px){
+        width: 100%;
+        margin: 30px auto 30px auto;
+    }
+}
+  
+.image_gallery img {
+    @include breakpoint(1025px, 7680px){
+        width: 750px;
+        padding: 10px;
+    }
+    @include breakpoint(481px, 1024px){
+        width: 580px;
+        padding: 10px;
+        @include breakpoint(481px, 761px){
+            width: 500px;
+        }
+    }
+    @include breakpoint(0px, 480px){
+        width: 400px;
+        padding-right: 8px;
+    }
+}
+
+section{
+    @include breakpoint(1025px, 7680px){
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    @include breakpoint(481px, 1024px){
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    @include breakpoint(0px, 480px){
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.heading2{
+    text-transform: uppercase;
+    @include breakpoint(1025px, 7680px){
+        font-size: 1.4cm;
+        margin: 50px 0 50px 0;
+        width: 450px;
+        float: left;
+        line-height: 180%;
+    }
+    @include breakpoint(481px, 1024px){
+        font-size: 1.4cm;
+        margin: 0 0 50px 0;
+        width: 320px;
+        float: left;
+        line-height: 180%;
+    }
+    @include breakpoint(0px, 480px){
+        font-size: 0.5cm;
+        margin: 0 auto 0 auto;
+        width: 280px;
+        text-align: center;
+    }
+}
+
+.para1{
+    @include breakpoint(1025px, 7680px){
+        font-size: 0.65cm;
+        margin: 50px 0 80px 0;
+        float: right;
+        width: 50%;
+    }
+    @include breakpoint(481px, 1024px){
+        font-size: 0.5cm;
+        margin: 50px 0 50px 0;
+        float: right;
+        width: 45%;
+    }
+    @include breakpoint(0px, 480px){
+        font-size: 0.4cm;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.video video{
+    @include breakpoint(1025px, 7680px){
+        position: relative;
+        width: 700px;
+        float: left;
+        margin: 0 0 50px 0;
+    }
+    @include breakpoint(481px, 1024px){
+        position: relative;
+        width: 350px;
+        float: left;
+        margin: 0 0 50px 0;
+    }
+    @include breakpoint(0px, 480px){
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.heading3{
+    text-transform: uppercase;
+    text-align: right;
+    @include breakpoint(1025px, 7680px){
+        font-size: 1.4cm;
+        margin: 50px 0 50px 0;
+        width: 250px;
+        float: right;
+        line-height: 180%;
+        padding-bottom: 150px;
+    }
+    @include breakpoint(481px, 1024px){
+        font-size: 1.4cm;
+        margin: 0 0 50px 0;
+        width: 250px;
+        float: right;
+        line-height: 180%;
+    }
+    @include breakpoint(0px, 480px){
+        font-size: 0.5cm;
+        margin: 0 auto 0 auto;
+        width: 280px;
+        text-align: center;
+    }
+}
+
+#footer{
+    background-color: black;
+    color: white; 
+    overflow: auto;
+    width: 100%;
+    height: auto;
+    margin: 0;
+} 
+
+.heading4:before{
+    position: absolute;
+    content: 'rescue';
+    color: red;
+    margin: 0;
+    animation-name: changing_Word2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes changing_Word2{
+    0% {content: 'save';}
+    50% {content: 'help';}
+    100% {content: 'rescue';}
+}
+
+.heading4{
+    @include breakpoint(1025px, 7680px){
+        font-size: 2cm;
+        margin: 50px 0 50px 10%;
+        width: 320px;
+        float: left;
+        line-height: 180%;
+    }
+    @include breakpoint(481px, 1024px){
+        font-size: 1.4cm;
+        margin: 0 0 50px 50px;
+        width: 200px;
+        float: left;
+        line-height: 180%;
+    }
+    @include breakpoint(0px, 480px){
+        font-size: 1cm;
+        margin: 10px 0 0 30px;
+        width: 100px;
+        float: left;
+        @include breakpoint(0px, 320px){
+            width: 200px;
+            height: 120px;
+        }
+    }
+}
+
+.part1, .part2{
+    padding-left: 8%;
+    @include breakpoint(1025px, 7680px){
+        font-size: 0.65cm;
+        margin: 50px 0 50px 10px;
+        float: left;
+        width: 240px;
+    }
+    @include breakpoint(481px, 1024px){
+        font-size: 0.5cm;
+        margin: 50px 0 50px 0;
+        float: left;
+    }
+    @include breakpoint(0px, 480px){
+        font-size: 0.35cm;
+        margin: 10px 0 30px 0;
+        width: 75px;
+        float: left;
+        @include breakpoint(0px, 320px){
+            float: right;
+            margin-right: 20px;
+        }
+    }
+}
+
+.part1 h2, .part2 h2{
+    text-decoration: underline;
+    margin: 10px 0 10px 0;
+}
+
+.part2 ul li{
+    padding-bottom: 10px;
+}
+
+#footer ul{
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+}
+
+#footer a:visited{
+    color: white;
+}
+
+#bg_video{
+    @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
+        border-radius: 20px;
+    }
+
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        border-radius: 20px; 
+    }
+
+    @include breakpoint(0px, 480px){
+        border-radius: 12px;
+    }
+}
+
+.forest h1, .climate h1, .oceans h1, .wildlife h1, .solutions h1, .share h1{
+    @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
+        top: 40%;
+        left: 56%;
+        font-size:4.5cm; 
+    }
+
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        @include breakpoint(700px, 1024px){
+            font-size: 2.5cm;
+        }
+    }
+
+    @include breakpoint(0px, 480px){
+        top: 10%;
+        left: -3%;
+        text-align: right;
+        line-height: 120%;
+        margin-bottom: 0;
+        margin-left: 53%;
+        font-size: 1.6cm;
+        @include breakpoint(0px, 320px){
+            font-size:1.3cm;
+            margin-left: 53%;
+            top: 13%;
+        }
+        @include breakpoint(321px, 400px){
+            font-size:1.5cm;
+            margin-left: 50%;
+            top: 10%;
+        }
+    }
+}
+
+.wildlife h1{
+    @include breakpoint(0px, 320px){
+        margin-left: 50%;
+    }
+    @include breakpoint(1025px, 7680px){ 
+        left: 50%;
+    }
+}
+
+.solutions h1{
+    @include breakpoint(1025px, 7680px){ 
+        left: 47%;
+    }
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        @include breakpoint(700px, 1024px){
+            left: 0%;
+        }
+    }
+    @include breakpoint(0px, 480px){
+        left: -13%;
+    }
+}
+
+.share h1{
+    @include breakpoint(1025px, 7680px){
+        top: 0%;
+        left: 35%;
+    }
+
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        @include breakpoint(700px, 1024px){
+            top: 10%;
+            left: -10%;
+            width: 400px;
+        }
+    }
+
+    @include breakpoint(0px, 480px){
+        width: 255px;
+        top: 3%;
+        left: -23%;
+        @include breakpoint(0px, 320px){
+            left: -40%;
+        }
+    }
+}
+
+.quote{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    @include breakpoint(1025px, 7680px){
+        font-size: 0.8cm;
+        margin: 0 0 50px 0; 
+        line-height: 180%;
+        padding-top: 150px;
+    }
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        @include breakpoint(700px, 1024px){
+            font-size: 0.6cm;
+        }
+    }
+}
+
+.by{
+    text-align: center;
+    @include breakpoint(1025px, 7680px){
+        font-size: 0.55cm;
+        margin-bottom: 100px;
+    }
+    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+        @include breakpoint(700px, 1024px){
+            font-size: 0.5cm;
+            margin-bottom: 50px;
+        }
+    }
+    @include breakpoint(0px, 480px){
+        font-size: 0.4cm;
+        padding-top: 10px;
+        margin-bottom: 50px;
+    }
+}
+
+.to_link{
+    text-transform: uppercase;
+    margin: 50px auto 100px auto;
+    width: 220px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 0.7cm;
+    display: block;
+    cursor: pointer;  
+    z-index: 40;
+}
+
+.time, .cut_forest, .wolf, .ship{
+    @include breakpoint(0px, 480px){ /*Large mobile/tablet Portrait*/
+        height: auto;
+        padding: 0 0 50px 0;
+        
+    }
+}
+
+.numbers #red_word{
+    @include breakpoint(1025px, 7680px){
+        font-size: 2.5cm;
+    }
+    @include breakpoint(481px, 1024px){
+        font-size: 2cm;
+    }
+    @include breakpoint(0px, 480px){
+        font-size: 1cm;
+        @include breakpoint(320px, 375px){
+            font-size: 0.8cm;
+        }
+    }
+}
+
+.numbers {
+    @include breakpoint(1025px, 7680px){
+        font-size: 1cm;
+        line-height: 100px;
+        margin-top: 100px;
+    }
+
+    @include breakpoint(481px, 1024px){
+        font-size: 0.6cm;
+        line-height: 100px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    @include breakpoint(0px, 480px){
+        font-size: 0.4cm;
+        line-height: 70px;
+        margin-bottom: 50px;
+        @include breakpoint(320px, 375px){
+            line-height: 50px;
+        }
+    }
+}
+
+.plastic_pollution{
+    font-size: xx-large;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.plastic_pollution video{
+    padding-right: 20px;
+}
+
+
+
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 15px auto 15px;
+}
+  
+  /* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+  
+  /* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 40%;
+    @include breakpoint(300px, 411px){
+        padding: 10px;
+    }
+}
+  
+  /* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: red;
+    border: 4px solid red;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+  /* Place the container to the left */
+.left {
+    margin-left: 40px;
+    @include breakpoint(481px, 1024px){
+        margin-left: -5px;
+    }
+    @include breakpoint(400px, 411px){
+        margin-left: 20px;
+    }
+    @include breakpoint(321px, 375px){
+        margin-left: 15px;
+    }
+    @include breakpoint(300px, 320px){
+        margin-left: 10px;
+    }
+}
+  
+  /* Place the container to the right */
+.right {
+    left: 50%;
+}
+  
+  /* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+    @include breakpoint(481px, 7680px){
+        border: medium solid black;
+        border-color: transparent transparent transparent black;
+    }
+}
+  
+  /* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    @include breakpoint(481px, 7680px){
+        border: medium solid black;
+        border-color: transparent transparent transparent black;
+    }
+}
+  
+  /* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+  
+  /* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: black;
+    color: white;
+    position: relative;
+    border-radius: 6px;
+    @include breakpoint(300px, 320px){
+        padding: 10px;
+    }
+    
+}
