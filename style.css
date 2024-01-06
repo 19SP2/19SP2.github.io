@@ -1,0 +1,1330 @@
+* {
+  font-family: "Antonio", sans-serif;
+}
+
+/*Standard resolution mobile. Portrait - viewport width of up to 480px
+Large mobile/tablet. Portrait - viewport width of between 481px to 1024px
+Tablet/laptop. Landscape - viewport width of 1025px and above
+7680px is the highest resolution width available as of now*/
+#flames, #smoke {
+  position: fixed;
+  opacity: 15%;
+  top: 0;
+  left: 0;
+}
+
+#main_video {
+  background-color: black;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  #main_video { /*Tablet/laptop Landscape*/
+    height: 530px;
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  #main_video { /*Large mobile/tablet Portrait*/
+    height: auto;
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #main_video {
+    height: auto;
+    border-radius: 12px;
+  }
+}
+
+#logo {
+  position: fixed;
+  background-color: black;
+  border-radius: 5px;
+  z-index: 1;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  #logo { /*Tablet/laptop Landscape*/
+    left: 40px;
+    top: 10px;
+    padding-left: 5px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  #logo { /*Large mobile/tablet Portrait*/
+    top: 20px;
+    width: 20%;
+    left: 30px;
+    padding-left: 5px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #logo {
+    top: 10px;
+    width: 20%;
+    left: 20px;
+    padding-left: 3px;
+  }
+}
+
+header h1 { /*Nature is...*/
+  color: white;
+  position: absolute;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  header h1 { /*Tablet/laptop Landscape*/
+    top: 5%;
+    left: 56%;
+    font-size: 3.1cm;
+    text-align: right;
+    line-height: 120%;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  header h1 { /*Large mobile/tablet Portrait*/
+    left: 6%;
+    font-size: 1.4cm;
+    text-align: right;
+    line-height: 120%;
+    margin-bottom: 0;
+    margin-left: 50%;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 700px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 2.2cm;
+    top: 10%;
+    left: 6%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  header h1 {
+    top: 10%;
+    left: 6%;
+    text-align: right;
+    line-height: 120%;
+    margin-bottom: 0;
+    margin-left: 53%;
+    font-size: 1cm;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 0px) and (max-width: 320px) {
+  header h1 {
+    font-size: 0.8cm;
+    margin-left: 53%;
+    top: 7%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 321px) and (max-width: 400px) {
+  header h1 {
+    font-size: 0.9cm;
+    margin-left: 50%;
+    top: 3%;
+  }
+}
+
+header p {
+  color: white;
+  position: absolute;
+  font-family: "Lexend", sans-serif;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  header p { /*Tablet/laptop Landscape*/
+    top: 400px;
+    left: 56%;
+    text-align: right;
+    font-weight: lighter;
+    font-size: 4.5mm;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  header p { /*Large mobile/tablet Portrait*/
+    top: 210px;
+    left: 56%;
+    text-align: right;
+    font-weight: lighter;
+    font-size: 2mm;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 700px) and (max-width: 1024px) {
+  header p {
+    top: 370px;
+    left: 56%;
+    font-size: 3mm;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  header p {
+    top: 190px;
+    left: 57%;
+    text-align: right;
+    font-weight: lighter;
+    font-size: 1.5mm;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 0px) and (max-width: 320px) {
+  header p {
+    top: 130px;
+    left: 56%;
+    font-size: 1.2mm;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 321px) and (max-width: 400px) {
+  header p {
+    top: 135px;
+    left: 56%;
+    font-size: 1.2mm;
+  }
+}
+
+#changing_word:before {
+  content: "BEAUTY";
+  animation-name: changingWord;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes changingWord {
+  10% {
+    content: "BEAUTY";
+  }
+  20% {
+    content: "BEAUTY";
+  }
+  50% {
+    content: "CALLING";
+  }
+  100% {
+    content: "DYING";
+    color: red;
+  }
+} /*https://www.youtube.com/watch?v=mGmIGxuisPs*/
+.discover {
+  color: white;
+  position: fixed;
+  display: block;
+  text-decoration: underline;
+  transform: translateY(-50%);
+  /*This enables to position the element along the y axis*/
+  border: 0;
+  background: 0 0;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .discover { /*Tablet/laptop Landscape*/
+    top: 30px;
+    left: 83%;
+    width: 40px;
+    height: 40px;
+    font-size: large;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .discover { /*Large mobile/tablet Portrait*/
+    top: 40px;
+    left: 83%;
+    font-size: 2.5mm;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 700px) and (max-width: 1024px) {
+  .discover {
+    font-size: 3.7mm;
+    top: 45px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .discover {
+    top: 22px;
+    left: 82%;
+    font-size: 1.6mm;
+  }
+}
+
+.discover h1 {
+  background-color: black;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px;
+}
+
+.navigation {
+  position: fixed;
+  background-color: white;
+  border-radius: 20px;
+  transition: 1s;
+  z-index: 1;
+  left: -500px;
+  width: 300px;
+  height: 60%;
+}
+
+.navigation ul {
+  position: absolute;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .navigation ul { /*Tablet/laptop Landscape*/
+    top: 2%;
+    right: 6%;
+    line-height: 55%;
+    width: 500px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .navigation ul { /*Large mobile/tablet Portrait*/
+    top: 1%;
+    right: 6%;
+    line-height: 40%;
+    width: 500px;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+  .navigation ul {
+    line-height: 80%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .navigation ul {
+    line-height: 120%;
+    font-size: smaller;
+    width: 120px;
+    right: 8%;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 0px) and (max-width: 320px) {
+  .navigation ul {
+    line-height: 120%;
+    font-size: smaller;
+    width: 120px;
+    right: 8%;
+  }
+}
+
+.navigation ul li {
+  color: black;
+  list-style-type: none;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .navigation ul li { /*Tablet/laptop Landscape*/
+    padding: 20px 30px;
+    font-size: 1.4em;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .navigation ul li { /*Large mobile/tablet Portrait*/
+    padding: 7px 7px;
+    font-size: x-small;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+  .navigation ul li {
+    font-size: small;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .navigation ul li {
+    font-size: xx-small;
+    text-align: right;
+    padding: 0 10px;
+  }
+}
+
+.navigation ul li:not(:last-child) {
+  font-weight: bold;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .navigation ul li:not(:last-child) { /*Tablet/laptop Landscape*/
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .navigation ul li:not(:last-child) { /*Large mobile/tablet Portrait*/
+    font-size: smaller;
+  }
+}
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+  .navigation ul li:not(:last-child) {
+    font-size: larger;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .navigation ul li:not(:last-child) {
+    font-size: small;
+  }
+}
+
+.navigation.active { /*white box*/
+  position: fixed;
+  border: 1px solid black;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .navigation.active { /*Tablet/laptop Landscape*/
+    top: 91px;
+    left: 56%;
+    width: 460px;
+    height: 420px;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) and (min-width: 1300px) and (max-width: 7680px) {
+  .navigation.active {
+    left: 56%;
+    width: 540px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .navigation.active { /*Large mobile/tablet Portrait*/
+    top: 60px; /*for 481 - 599*/
+    left: 55%;
+    width: 200px;
+    height: 180px;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+    /*similar to function in python, mixin lets the code written inside be reused*/
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 600px) and (max-width: 700px) {
+  .navigation.active {
+    top: 55px;
+    left: 65%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 701px) and (max-width: 900px) {
+  .navigation.active {
+    top: 70px;
+    left: 70%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 901px) and (max-width: 1024px) {
+  .navigation.active {
+    top: 70px;
+    left: 70%;
+    height: 240px;
+    width: 220px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .navigation.active {
+    top: 41px;
+    left: 62%;
+    width: 130px;
+    height: 140px;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 0px) and (max-width: 320px) {
+  .navigation.active {
+    top: 32px;
+    left: 55%;
+    width: 130px;
+    height: 140px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 320px) and (max-width: 375px) {
+  .navigation.active {
+    top: 32px;
+    left: 56%;
+    width: 130px;
+    height: 140px;
+  }
+}
+
+.drop_down a:hover {
+  text-decoration: underline;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover, button {
+  cursor: pointer;
+}
+
+.heading1 {
+  text-transform: uppercase;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .heading1 {
+    font-size: 0.9cm;
+    margin: 50px 0 50px 0;
+    width: 320px;
+    float: left;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .heading1 {
+    font-size: 0.8cm;
+    margin: 50px 0 50px 0;
+    width: 300px;
+    float: left;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 481px) and (max-width: 761px) {
+  .heading1 {
+    font-size: 0.5cm;
+    width: 210px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .heading1 {
+    font-size: 0.4cm;
+    margin: 30px auto 0 auto;
+    width: 280px;
+    text-align: center;
+  }
+}
+
+#red_word {
+  color: red;
+  animation-name: changeColor;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+}
+
+@keyframes changeColor {
+  0% {
+    color: black;
+  }
+  80% {
+    color: rgb(150, 0, 0);
+  }
+  100% {
+    color: red;
+  }
+}
+.image_gallery { /*https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp*/
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  position: relative;
+  /*top right bottom left*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .image_gallery {
+    padding: 2px;
+    width: 59%;
+    margin: 50px 0 50px 0;
+    float: right;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .image_gallery {
+    padding: 2px;
+    width: 49%;
+    margin: 50px 0 50px 0;
+    float: right;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 481px) and (max-width: 761px) {
+  .image_gallery {
+    padding: 2px;
+    width: 40%;
+    margin: 50px 0 50px 0;
+    float: right;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .image_gallery {
+    width: 100%;
+    margin: 30px auto 30px auto;
+  }
+}
+
+.image_gallery img {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .image_gallery img {
+    width: 750px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .image_gallery img {
+    width: 580px;
+    padding: 10px;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 481px) and (max-width: 761px) {
+  .image_gallery img {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .image_gallery img {
+    width: 400px;
+    padding-right: 8px;
+  }
+}
+
+section {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  section {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  section {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  section {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+.heading2 {
+  text-transform: uppercase;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .heading2 {
+    font-size: 1.4cm;
+    margin: 50px 0 50px 0;
+    width: 450px;
+    float: left;
+    line-height: 180%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .heading2 {
+    font-size: 1.4cm;
+    margin: 0 0 50px 0;
+    width: 320px;
+    float: left;
+    line-height: 180%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .heading2 {
+    font-size: 0.5cm;
+    margin: 0 auto 0 auto;
+    width: 280px;
+    text-align: center;
+  }
+}
+
+.para1 {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .para1 {
+    font-size: 0.65cm;
+    margin: 50px 0 80px 0;
+    float: right;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .para1 {
+    font-size: 0.5cm;
+    margin: 50px 0 50px 0;
+    float: right;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .para1 {
+    font-size: 0.4cm;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.video video {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .video video {
+    position: relative;
+    width: 700px;
+    float: left;
+    margin: 0 0 50px 0;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .video video {
+    position: relative;
+    width: 350px;
+    float: left;
+    margin: 0 0 50px 0;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .video video {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.heading3 {
+  text-transform: uppercase;
+  text-align: right;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .heading3 {
+    font-size: 1.4cm;
+    margin: 50px 0 50px 0;
+    width: 250px;
+    float: right;
+    line-height: 180%;
+    padding-bottom: 150px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .heading3 {
+    font-size: 1.4cm;
+    margin: 0 0 50px 0;
+    width: 250px;
+    float: right;
+    line-height: 180%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .heading3 {
+    font-size: 0.5cm;
+    margin: 0 auto 0 auto;
+    width: 280px;
+    text-align: center;
+  }
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.heading4:before {
+  position: absolute;
+  content: "rescue";
+  color: red;
+  margin: 0;
+  animation-name: changing_Word2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes changing_Word2 {
+  0% {
+    content: "save";
+  }
+  50% {
+    content: "help";
+  }
+  100% {
+    content: "rescue";
+  }
+}
+.heading4 {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .heading4 {
+    font-size: 2cm;
+    margin: 50px 0 50px 10%;
+    width: 320px;
+    float: left;
+    line-height: 180%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .heading4 {
+    font-size: 1.4cm;
+    margin: 0 0 50px 50px;
+    width: 200px;
+    float: left;
+    line-height: 180%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .heading4 {
+    font-size: 1cm;
+    margin: 10px 0 0 30px;
+    width: 100px;
+    float: left;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 0px) and (max-width: 320px) {
+  .heading4 {
+    width: 200px;
+    height: 120px;
+  }
+}
+
+.part1, .part2 {
+  padding-left: 8%;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .part1, .part2 {
+    font-size: 0.65cm;
+    margin: 50px 0 50px 10px;
+    float: left;
+    width: 240px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .part1, .part2 {
+    font-size: 0.5cm;
+    margin: 50px 0 50px 0;
+    float: left;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .part1, .part2 {
+    font-size: 0.35cm;
+    margin: 10px 0 30px 0;
+    width: 75px;
+    float: left;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 0px) and (max-width: 320px) {
+  .part1, .part2 {
+    float: right;
+    margin-right: 20px;
+  }
+}
+
+.part1 h2, .part2 h2 {
+  text-decoration: underline;
+  margin: 10px 0 10px 0;
+}
+
+.part2 ul li {
+  padding-bottom: 10px;
+}
+
+#footer ul {
+  list-style-type: none;
+  padding: 5px;
+  margin: 0;
+}
+
+#footer a:visited {
+  color: white;
+}
+
+#bg_video {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  #bg_video { /*Tablet/laptop Landscape*/
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  #bg_video { /*Large mobile/tablet Portrait*/
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #bg_video {
+    border-radius: 12px;
+  }
+}
+
+.forest h1, .climate h1, .oceans h1, .wildlife h1, .solutions h1, .share h1 {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .forest h1, .climate h1, .oceans h1, .wildlife h1, .solutions h1, .share h1 { /*Tablet/laptop Landscape*/
+    top: 40%;
+    left: 56%;
+    font-size: 4.5cm;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .forest h1, .climate h1, .oceans h1, .wildlife h1, .solutions h1, .share h1 { /*Large mobile/tablet Portrait*/
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 700px) and (max-width: 1024px) {
+  .forest h1, .climate h1, .oceans h1, .wildlife h1, .solutions h1, .share h1 {
+    font-size: 2.5cm;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .forest h1, .climate h1, .oceans h1, .wildlife h1, .solutions h1, .share h1 {
+    top: 10%;
+    left: -3%;
+    text-align: right;
+    line-height: 120%;
+    margin-bottom: 0;
+    margin-left: 53%;
+    font-size: 1.6cm;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 0px) and (max-width: 320px) {
+  .forest h1, .climate h1, .oceans h1, .wildlife h1, .solutions h1, .share h1 {
+    font-size: 1.3cm;
+    margin-left: 53%;
+    top: 13%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 321px) and (max-width: 400px) {
+  .forest h1, .climate h1, .oceans h1, .wildlife h1, .solutions h1, .share h1 {
+    font-size: 1.5cm;
+    margin-left: 50%;
+    top: 10%;
+  }
+}
+
+.wildlife h1 {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  .wildlife h1 {
+    margin-left: 50%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .wildlife h1 {
+    left: 50%;
+  }
+}
+
+.solutions h1 {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .solutions h1 {
+    left: 47%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .solutions h1 { /*Large mobile/tablet Portrait*/
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 700px) and (max-width: 1024px) {
+  .solutions h1 {
+    left: 0%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .solutions h1 {
+    left: -13%;
+  }
+}
+
+.share h1 {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .share h1 {
+    top: 0%;
+    left: 35%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .share h1 { /*Large mobile/tablet Portrait*/
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 700px) and (max-width: 1024px) {
+  .share h1 {
+    top: 10%;
+    left: -10%;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .share h1 {
+    width: 255px;
+    top: 3%;
+    left: -23%;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 0px) and (max-width: 320px) {
+  .share h1 {
+    left: -40%;
+  }
+}
+
+.quote {
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .quote {
+    font-size: 0.8cm;
+    margin: 0 0 50px 0;
+    line-height: 180%;
+    padding-top: 150px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .quote { /*Large mobile/tablet Portrait*/
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 700px) and (max-width: 1024px) {
+  .quote {
+    font-size: 0.6cm;
+  }
+}
+
+.by {
+  text-align: center;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .by {
+    font-size: 0.55cm;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .by { /*Large mobile/tablet Portrait*/
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) and (min-width: 700px) and (max-width: 1024px) {
+  .by {
+    font-size: 0.5cm;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .by {
+    font-size: 0.4cm;
+    padding-top: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+.to_link {
+  text-transform: uppercase;
+  margin: 50px auto 100px auto;
+  width: 220px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 0.7cm;
+  display: block;
+  cursor: pointer;
+  z-index: 40;
+}
+
+.time, .cut_forest, .wolf, .ship {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .time, .cut_forest, .wolf, .ship { /*Large mobile/tablet Portrait*/
+    height: auto;
+    padding: 0 0 50px 0;
+  }
+}
+
+.numbers #red_word {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .numbers #red_word {
+    font-size: 2.5cm;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .numbers #red_word {
+    font-size: 2cm;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .numbers #red_word {
+    font-size: 1cm;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 320px) and (max-width: 375px) {
+  .numbers #red_word {
+    font-size: 0.8cm;
+  }
+}
+
+.numbers {
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+  .numbers {
+    font-size: 1cm;
+    line-height: 100px;
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .numbers {
+    font-size: 0.6cm;
+    line-height: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .numbers {
+    font-size: 0.4cm;
+    line-height: 70px;
+    margin-bottom: 50px;
+    /*similar to function in python, mixin lets the code written inside be reused*/
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 320px) and (max-width: 375px) {
+  .numbers {
+    line-height: 50px;
+  }
+}
+
+.plastic_pollution {
+  font-size: xx-large;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.plastic_pollution video {
+  padding-right: 20px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 15px auto 15px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 40%;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 300px) and (max-width: 411px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: red;
+  border: 4px solid red;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  margin-left: 40px;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .left {
+    margin-left: -5px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 411px) {
+  .left {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .left {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 320px) {
+  .left {
+    margin-left: 10px;
+  }
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 481px) and (max-width: 7680px) {
+  .left::before {
+    border: medium solid black;
+    border-color: transparent transparent transparent black;
+  }
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 481px) and (max-width: 7680px) {
+  .right::before {
+    border: medium solid black;
+    border-color: transparent transparent transparent black;
+  }
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: black;
+  color: white;
+  position: relative;
+  border-radius: 6px;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 300px) and (max-width: 320px) {
+  .content {
+    padding: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
