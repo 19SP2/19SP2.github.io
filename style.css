@@ -21,7 +21,7 @@ Tablet/laptop. Landscape - viewport width of 1025px and above
 }
 @media screen and (min-width: 1025px) and (max-width: 7680px) {
   #main_video { /*Tablet/laptop Landscape*/
-    height: 530px;
+    height: 580px;
     border-radius: 20px;
   }
 }
@@ -645,7 +645,7 @@ section {
   .heading2 {
     font-size: 1.4cm;
     margin: 50px 0 50px 0;
-    width: 450px;
+    width: 520px;
     float: left;
     line-height: 180%;
   }
@@ -880,6 +880,7 @@ section {
   list-style-type: none;
   padding: 5px;
   margin: 0;
+  color: white;
 }
 
 #footer a:visited {
@@ -1128,52 +1129,69 @@ section {
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .numbers #red_word {
-    font-size: 2cm;
+    font-size: 1cm;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .numbers #red_word {
-    font-size: 1cm;
+    font-size: 0.8cm;
     /*similar to function in python, mixin lets the code written inside be reused*/
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 320px) and (max-width: 375px) {
   .numbers #red_word {
-    font-size: 0.8cm;
+    font-size: 0.7cm;
   }
 }
 
+.cut_forest {
+  padding-bottom: 100px;
+}
+
 .numbers {
+  color: white;
+  position: absolute;
   /*similar to function in python, mixin lets the code written inside be reused*/
   /*similar to function in python, mixin lets the code written inside be reused*/
   /*similar to function in python, mixin lets the code written inside be reused*/
 }
 @media screen and (min-width: 1025px) and (max-width: 7680px) {
   .numbers {
-    font-size: 1cm;
+    font-size: 0.7cm;
     line-height: 100px;
     margin-top: 100px;
+    margin-left: 330px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .numbers {
-    font-size: 0.6cm;
-    line-height: 100px;
-    margin-top: 100px;
+    font-size: 0.4cm;
+    line-height: 80px;
     margin-bottom: 100px;
+    margin-left: 190px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
   .numbers {
-    font-size: 0.4cm;
-    line-height: 70px;
+    font-size: 0.25cm;
+    line-height: 50px;
     margin-bottom: 50px;
+    margin-left: 100px;
+    /*similar to function in python, mixin lets the code written inside be reused*/
     /*similar to function in python, mixin lets the code written inside be reused*/
   }
 }
-@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 320px) and (max-width: 375px) {
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 321px) and (max-width: 375px) {
   .numbers {
-    line-height: 50px;
+    line-height: 45px;
+    font-size: 0.2cm;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 480px) and (min-width: 0px) and (max-width: 320px) {
+  .numbers {
+    line-height: 35px;
+    font-size: 0.18cm;
+    margin-left: 80px;
   }
 }
 
@@ -1185,6 +1203,12 @@ section {
 
 .plastic_pollution video {
   padding-right: 20px;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  .plastic_pollution video {
+    width: 100%;
+  }
 }
 
 .timeline {
@@ -1327,4 +1351,46 @@ section {
   .content {
     padding: 10px;
   }
+}
+
+.footer a:visited {
+  color: black;
+}
+
+.ice {
+  width: auto;
+  height: 550px;
+  display: flex;
+  float: left;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*similar to function in python, mixin lets the code written inside be reused*/
+}
+@media screen and (min-width: 0px) and (max-width: 375px) {
+  .ice {
+    width: 100%;
+  }
+}
+
+.time {
+  padding-bottom: 50px;
+}
+
+.iceberg_para {
+  font-size: 0.8cm;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 45px;
+}
+
+.tree {
+  display: flex;
+  width: 100%;
+  float: inline-end;
+  padding-bottom: 100px;
+}
+
+.ship {
+  padding-bottom: 100px;
 }/*# sourceMappingURL=style.css.map */

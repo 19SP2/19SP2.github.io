@@ -23,7 +23,7 @@ Tablet/laptop. Landscape - viewport width of 1025px and above
 #main_video{
     background-color: black;
     @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
-        height: 530px;
+        height: 580px;
         border-radius: 20px;
     }
 
@@ -478,7 +478,7 @@ section{
     @include breakpoint(1025px, 7680px){
         font-size: 1.4cm;
         margin: 50px 0 50px 0;
-        width: 450px;
+        width: 520px;
         float: left;
         line-height: 180%;
     }
@@ -653,6 +653,7 @@ section{
     list-style-type: none;
     padding: 5px;
     margin: 0;
+    color: white;
 }
 
 #footer a:visited{
@@ -817,35 +818,49 @@ section{
         font-size: 2.5cm;
     }
     @include breakpoint(481px, 1024px){
-        font-size: 2cm;
+        font-size: 1cm;
     }
     @include breakpoint(0px, 480px){
-        font-size: 1cm;
+        font-size: 0.8cm;
         @include breakpoint(320px, 375px){
-            font-size: 0.8cm;
+            font-size: 0.7cm;
         }
     }
 }
 
+.cut_forest{
+    padding-bottom: 100px;
+}
+
 .numbers {
+    color: white;
+    position: absolute;
     @include breakpoint(1025px, 7680px){
-        font-size: 1cm;
+        font-size: 0.7cm;
         line-height: 100px;
         margin-top: 100px;
+        margin-left: 330px;
     }
 
     @include breakpoint(481px, 1024px){
-        font-size: 0.6cm;
-        line-height: 100px;
-        margin-top: 100px;
+        font-size: 0.4cm;
+        line-height: 80px;
         margin-bottom: 100px;
+        margin-left: 190px;
     }
     @include breakpoint(0px, 480px){
-        font-size: 0.4cm;
-        line-height: 70px;
+        font-size: 0.25cm;
+        line-height: 50px;
         margin-bottom: 50px;
-        @include breakpoint(320px, 375px){
-            line-height: 50px;
+        margin-left: 100px;
+        @include breakpoint(321px, 375px){
+            line-height: 45px;
+            font-size: 0.2cm;
+        }
+        @include breakpoint(0px, 320px){
+            line-height: 35px;
+            font-size: 0.18cm;
+            margin-left: 80px;
         }
     }
 }
@@ -858,10 +873,10 @@ section{
 
 .plastic_pollution video{
     padding-right: 20px;
+    @include breakpoint(0px, 1024px){
+        width: 100%;
+    }
 }
-
-
-
 
 .timeline {
     position: relative;
@@ -980,4 +995,43 @@ section{
         padding: 10px;
     }
     
+}
+
+.footer a:visited{
+    color: black;
+}
+
+.ice{
+    width: auto;
+    height: 550px;
+    display: flex;
+    float: left;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include breakpoint(0px, 375px){
+        width: 100%;
+    }
+}
+
+.time{
+    padding-bottom: 50px;
+}
+
+.iceberg_para{
+    font-size: 0.8cm;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 45px;
+}
+
+.tree{
+    display: flex;
+    width: 100%;
+    float: inline-end;
+    padding-bottom: 100px;
+}
+
+.ship{
+    padding-bottom: 100px;
 }
