@@ -8,14 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.js"></script>
+    <!--Google fonts Antonio and Lexend used-->
     <title>Rescue - Home</title>
 </head>
 <body>
 
+    <audio src="nature.mp3" autoplay loop></audio>
+
     <nav class="navigation">
         <button class="discover" onclick="show()"><h1>DISCOVER</h1></button>
-
+        <!--onclick method used to execute show() function in JavaScript-->
         <div>
             <ul class="drop_down">
                 <li><a href="climate.html">CLIMATE</a></li>
@@ -33,20 +35,20 @@
 
     <video id="main_video" width="100%" autoplay muted loop>
         <source src="main video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        Your browser does not support the video tag.<!--This message will be shown if video is not supported-->
     </video>
 
     <header>
-        <h1>NATURE IS <br><span id="changing_word"></span>.</h1>
+        <h1>NATURE IS <br><span id="changing_word"></span>.</h1> <!--CSS animation used to change word here-->
         <p>Sustaining the world for the benefit of people & nature</p>
     </header>
 
     <section>
         <div class="heading1">
             <h1><span id="red_word">One million</span> of the world's estimated 8 million species are threatened with extinction.</h1>
-        </div>
+        </div><!--CSS ainmation used to change the color of the words-->
 
-        <div class="image_gallery">
+        <div class="image_gallery"> <!--image gallery using CSS-->
             <img src="elephant.jpg" alt="Elephant">
             <img src="mahogany.jpg" alt="Mahogany tree">
             <img src="cheetah.jpg" alt="Cheetah">

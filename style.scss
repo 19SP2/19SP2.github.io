@@ -13,13 +13,6 @@ Tablet/laptop. Landscape - viewport width of 1025px and above
     }
 }
 
-#flames, #smoke{
-    position: fixed;
-    opacity: 15%;
-    top: 0;
-    left: 0;
-}
-
 #main_video{
     background-color: black;
     @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
@@ -32,7 +25,7 @@ Tablet/laptop. Landscape - viewport width of 1025px and above
         border-radius: 20px; 
     }
 
-    @include breakpoint(0px, 480px){
+    @include breakpoint(0px, 480px){ /*Standard resolution mobile*/
         height: auto;
         border-radius: 12px;
     }
@@ -56,7 +49,7 @@ Tablet/laptop. Landscape - viewport width of 1025px and above
         padding-left: 5px;
     }
 
-    @include breakpoint(0px, 480px){
+    @include breakpoint(0px, 480px){ /*Standard resolution mobile*/
         top: 10px;
         width: 20%;
         left: 20px;
@@ -90,7 +83,7 @@ header h1{ /*Nature is...*/
         }
     }
 
-    @include breakpoint(0px, 480px){
+    @include breakpoint(0px, 480px){ /*Standard resolution mobile*/
         top: 10%;
         left: 6%;
         text-align: right;
@@ -136,7 +129,7 @@ header p{
         }
     }
 
-    @include breakpoint(0px, 480px){
+    @include breakpoint(0px, 480px){ /*Standard resolution mobile*/
         top: 190px;
         left: 57%;
         text-align: right;
@@ -155,7 +148,7 @@ header p{
     }
 }
 
-#changing_word:before{
+#changing_word:before{ /*animation to change the words*/
     content: 'BEAUTY';
     animation-name: changingWord;
     animation-duration: 10s;
@@ -163,11 +156,11 @@ header p{
     animation-timing-function: ease;
 }
 
-@keyframes changingWord{
-    10% {content: 'BEAUTY';}
+@keyframes changingWord{ /*@keyframe used to access animation*/
+    10% {content: 'BEAUTY';} /*at 10% the content will be BEAUTY*/
     20% {content: 'BEAUTY';}
     50% {content: 'CALLING';}
-    100% {content: 'DYING'; color: red;}
+    100% {content: 'DYING'; color: red;} /*The color of the text starts to change its color to red*/
 } /*https://www.youtube.com/watch?v=mGmIGxuisPs*/
 
 .discover{
@@ -176,7 +169,6 @@ header p{
     display: block;
     text-decoration: underline;
     transform: translateY(-50%); 
-    /*This enables to position the element along the y axis*/
     border: 0;
     background: 0 0;
     @include breakpoint(1025px, 7680px){ /*Tablet/laptop Landscape*/
@@ -337,7 +329,7 @@ header p{
         }
     }
 
-    @include breakpoint(0px, 480px){
+    @include breakpoint(0px, 480px){ /*Standard resolution mobile*/
         top: 41px; 
         left: 62%;
         width: 130px; 
@@ -393,7 +385,6 @@ a:hover, button{
         margin: 30px auto 0 auto;
         width: 280px;
         text-align: center;
-        
     }
 }
 
@@ -404,7 +395,7 @@ a:hover, button{
     animation-iteration-count: 1;
 }
 
-@keyframes changeColor{
+@keyframes changeColor{ /*animation enables the text color to go from black to red*/
     0% {color: black;}
     80% {color: rgb(150, 0, 0);}
     100% {color: red;}
@@ -415,7 +406,6 @@ a:hover, button{
     overflow: auto;
     white-space: nowrap;
     position: relative;
-     /*top right bottom left*/
     @include breakpoint(1025px, 7680px){
         padding: 2px;
         width: 59%;
@@ -669,7 +659,7 @@ section{
         border-radius: 20px; 
     }
 
-    @include breakpoint(0px, 480px){
+    @include breakpoint(0px, 480px){ /*Standard resolution mobile*/
         border-radius: 12px;
     }
 }
@@ -687,7 +677,7 @@ section{
         }
     }
 
-    @include breakpoint(0px, 480px){
+    @include breakpoint(0px, 480px){ /*Standard resolution mobile*/
         top: 10%;
         left: -3%;
         text-align: right;
@@ -721,7 +711,7 @@ section{
     @include breakpoint(1025px, 7680px){ 
         left: 47%;
     }
-    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+    @include breakpoint(481px, 1024px){
         @include breakpoint(700px, 1024px){
             left: 0%;
         }
@@ -737,7 +727,7 @@ section{
         left: 35%;
     }
 
-    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+    @include breakpoint(481px, 1024px){
         @include breakpoint(700px, 1024px){
             top: 10%;
             left: -10%;
@@ -765,7 +755,7 @@ section{
         line-height: 180%;
         padding-top: 150px;
     }
-    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+    @include breakpoint(481px, 1024px){
         @include breakpoint(700px, 1024px){
             font-size: 0.6cm;
         }
@@ -778,7 +768,7 @@ section{
         font-size: 0.55cm;
         margin-bottom: 100px;
     }
-    @include breakpoint(481px, 1024px){ /*Large mobile/tablet Portrait*/
+    @include breakpoint(481px, 1024px){
         @include breakpoint(700px, 1024px){
             font-size: 0.5cm;
             margin-bottom: 50px;
@@ -806,10 +796,9 @@ section{
 }
 
 .time, .cut_forest, .wolf, .ship{
-    @include breakpoint(0px, 480px){ /*Large mobile/tablet Portrait*/
+    @include breakpoint(0px, 480px){
         height: auto;
         padding: 0 0 50px 0;
-        
     }
 }
 
@@ -841,7 +830,6 @@ section{
         margin-top: 100px;
         margin-left: 330px;
     }
-
     @include breakpoint(481px, 1024px){
         font-size: 0.4cm;
         line-height: 80px;
@@ -994,7 +982,6 @@ section{
     @include breakpoint(300px, 320px){
         padding: 10px;
     }
-    
 }
 
 .footer a:visited{

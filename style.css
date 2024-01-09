@@ -6,13 +6,6 @@
 Large mobile/tablet. Portrait - viewport width of between 481px to 1024px
 Tablet/laptop. Landscape - viewport width of 1025px and above
 7680px is the highest resolution width available as of now*/
-#flames, #smoke {
-  position: fixed;
-  opacity: 15%;
-  top: 0;
-  left: 0;
-}
-
 #main_video {
   background-color: black;
   /*similar to function in python, mixin lets the code written inside be reused*/
@@ -32,7 +25,7 @@ Tablet/laptop. Landscape - viewport width of 1025px and above
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  #main_video {
+  #main_video { /*Standard resolution mobile*/
     height: auto;
     border-radius: 12px;
   }
@@ -63,7 +56,7 @@ Tablet/laptop. Landscape - viewport width of 1025px and above
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  #logo {
+  #logo { /*Standard resolution mobile*/
     top: 10px;
     width: 20%;
     left: 20px;
@@ -107,7 +100,7 @@ header h1 { /*Nature is...*/
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  header h1 {
+  header h1 { /*Standard resolution mobile*/
     top: 10%;
     left: 6%;
     text-align: right;
@@ -169,7 +162,7 @@ header p {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  header p {
+  header p { /*Standard resolution mobile*/
     top: 190px;
     left: 57%;
     text-align: right;
@@ -194,7 +187,7 @@ header p {
   }
 }
 
-#changing_word:before {
+#changing_word:before { /*animation to change the words*/
   content: "BEAUTY";
   animation-name: changingWord;
   animation-duration: 10s;
@@ -202,10 +195,10 @@ header p {
   animation-timing-function: ease;
 }
 
-@keyframes changingWord {
+@keyframes changingWord { /*@keyframe used to access animation*/
   10% {
     content: "BEAUTY";
-  }
+  } /*at 10% the content will be BEAUTY*/
   20% {
     content: "BEAUTY";
   }
@@ -215,7 +208,7 @@ header p {
   100% {
     content: "DYING";
     color: red;
-  }
+  } /*The color of the text starts to change its color to red*/
 } /*https://www.youtube.com/watch?v=mGmIGxuisPs*/
 .discover {
   color: white;
@@ -223,7 +216,6 @@ header p {
   display: block;
   text-decoration: underline;
   transform: translateY(-50%);
-  /*This enables to position the element along the y axis*/
   border: 0;
   background: 0 0;
   /*similar to function in python, mixin lets the code written inside be reused*/
@@ -444,7 +436,7 @@ header p {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  .navigation.active {
+  .navigation.active { /*Standard resolution mobile*/
     top: 41px;
     left: 62%;
     width: 130px;
@@ -528,7 +520,7 @@ a:hover, button {
   animation-iteration-count: 1;
 }
 
-@keyframes changeColor {
+@keyframes changeColor { /*animation enables the text color to go from black to red*/
   0% {
     color: black;
   }
@@ -544,7 +536,6 @@ a:hover, button {
   overflow: auto;
   white-space: nowrap;
   position: relative;
-  /*top right bottom left*/
   /*similar to function in python, mixin lets the code written inside be reused*/
   /*similar to function in python, mixin lets the code written inside be reused*/
   /*similar to function in python, mixin lets the code written inside be reused*/
@@ -903,7 +894,7 @@ section {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  #bg_video {
+  #bg_video { /*Standard resolution mobile*/
     border-radius: 12px;
   }
 }
@@ -931,7 +922,7 @@ section {
   }
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  .forest h1, .climate h1, .oceans h1, .wildlife h1, .solutions h1, .share h1 {
+  .forest h1, .climate h1, .oceans h1, .wildlife h1, .solutions h1, .share h1 { /*Standard resolution mobile*/
     top: 10%;
     left: -3%;
     text-align: right;
@@ -984,7 +975,7 @@ section {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  .solutions h1 { /*Large mobile/tablet Portrait*/
+  .solutions h1 {
     /*similar to function in python, mixin lets the code written inside be reused*/
   }
 }
@@ -1011,7 +1002,7 @@ section {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  .share h1 { /*Large mobile/tablet Portrait*/
+  .share h1 {
     /*similar to function in python, mixin lets the code written inside be reused*/
   }
 }
@@ -1052,7 +1043,7 @@ section {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  .quote { /*Large mobile/tablet Portrait*/
+  .quote {
     /*similar to function in python, mixin lets the code written inside be reused*/
   }
 }
@@ -1075,7 +1066,7 @@ section {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
-  .by { /*Large mobile/tablet Portrait*/
+  .by {
     /*similar to function in python, mixin lets the code written inside be reused*/
   }
 }
@@ -1111,7 +1102,7 @@ section {
   /*similar to function in python, mixin lets the code written inside be reused*/
 }
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  .time, .cut_forest, .wolf, .ship { /*Large mobile/tablet Portrait*/
+  .time, .cut_forest, .wolf, .ship {
     height: auto;
     padding: 0 0 50px 0;
   }
