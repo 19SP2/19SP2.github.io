@@ -1375,7 +1375,7 @@ section {
   line-height: 45px;
 }
 
-.tree {
+.tree, .beach {
   display: flex;
   width: 100%;
   float: inline-end;
